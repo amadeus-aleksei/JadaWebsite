@@ -1,0 +1,33 @@
+.hero {
+    position: relative;
+    background-image: url('../../assets/chicago-background.png');
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #E7F0F2;
+    z-index: -1;
+
+    &__socials-icons-container {
+        position: absolute;
+        top: 3.5em;
+        left: .6em;
+        display: flex;
+        flex-direction: column;
+        transform: scale(1.5);        
+    }
+
+    &__message {
+        font-size: 25px;
+        margin: 10px 30px;
+        margin-top: 1.4em;
+    }
+
+    &__message-highlight {
+        color: #00ADAD;
+    }
+}

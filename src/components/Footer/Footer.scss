@@ -1,0 +1,74 @@
+.footer {
+    background-color: var(--color-text-dark-grey);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+
+    &__explore {
+        font-size: 1.25em;
+        margin: 0 0 .75em 0;
+        text-decoration: underline;
+    }
+
+    &__explore-container {
+        margin: 0 2em 1em 0;
+    }
+
+    &__explore-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: .4em;
+        list-style: none;
+    }
+
+    &__contact-us {
+        font-size: 1.25em;
+        margin: 0 0 .75em 0;
+        text-decoration: underline;
+    }
+
+    &__contact-us-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 2em 1em 0;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 .8em 0;
+        padding: 1em;
+        border: 1px;
+        width: 14em;
+        cursor: pointer;
+        border-style: solid;
+        color: var(--color-eggshell-white);
+        background-color: var(--color-sea-green);
+        border-color: var(--color-eggshell-white);
+        border-radius: .25em;
+        
+    }
+
+    &__follow-us {
+        font-size: 1.25em;
+        margin: 0 0 .75em 0;
+        text-decoration: underline;
+    }
+
+    &__follow-us-container {
+        display: flex;
+        justify-content: space-evenly;
+        transform: scale(1.25);
+        margin: 0 10em 1em 0;
+    }
+
+    &__text {
+        font-size: .75em;
+        margin-right: 2em;
+    }
+}
+
+li {
+    font-size: .75em;
+}

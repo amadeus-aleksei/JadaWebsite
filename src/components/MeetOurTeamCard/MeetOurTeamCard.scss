@@ -1,0 +1,57 @@
+.meet-our-team-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    padding-top: 0;
+    margin-bottom: 1.75em;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 4px 1px rgba(0,0,0,.4);
+
+    &__header {
+        color: var(--color-sea-green);
+        font-size: 26px;
+        font-weight: 100;
+        justify-self: center;
+        padding: 10px;
+        margin-bottom: .5em;
+    }
+
+    &__founders-titles {
+        display: flex;
+        justify-content: space-around;
+        margin: 1em 0 .75em 0;
+    }
+
+    &__image {
+        transform: scale(1.2);
+        margin-bottom: 1em;
+    }
+
+    &__founder-name {
+        font-size: .7em;
+        font-weight: 900;
+    }
+
+    &__founder-info {
+        font-size: .75em;
+        font-style: italic;
+    }
+    
+    &__button {
+        margin: 1em 1em .5em 1em;
+        font-size: 1em;
+        padding: .75em;
+        border: 0;
+        border-radius: 30px;
+        width: 12.5em;
+        align-self: center;
+        cursor: pointer;
+        color: var(--color-eggshell-white);
+        background-color: var(--color-sea-green);
+
+        &:hover {
+            background-color: var(--color-dark-cyan);
+        }   
+    }
+}

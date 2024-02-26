@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 95px;
+    background-color: var(--opaque-white-85);
+    box-shadow: 0 4px 15px 6px rgba(0,0,0,.8);
+        
+    &__logo-container {
+        display: flex;
+        align-items: center;
+        margin-left: 4%;
+        height: 100%;
+    }
+
+    &__spacer {
+        flex-grow: 1;
+    }
+
+    &__contact-icons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: .35em;
+        width: 16%;
+        transform: scale(1.15);
+    }
+
+    &__hamburger-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 18%;
+        background-color: var(--color-foam-green);
+        border-left: 1px solid rgba(0,0,0,.35);
+    }
+}

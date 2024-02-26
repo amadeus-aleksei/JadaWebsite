@@ -1,0 +1,51 @@
+.property-card {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    box-shadow: 0 4px 4px 1px rgba(0,0,0,.4);
+
+    &__image {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    &__address {
+        margin-top: .5em;
+        padding-bottom: 10px;
+        padding-left: 8px;
+    }
+
+    &__property-info-container {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: .9em;
+        padding-left: .6em;
+    }
+
+    &__price-size-info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__price {
+    }
+
+    &__size-info {
+        font-size: .9em;
+    }
+
+    &__isSold {
+        margin-left: auto;
+        text-align: center;
+        align-self: flex-end;
+        padding: .25em;
+        margin-right: .6em;
+        color: var(--color-white);
+        font-weight: 600;
+        background-color: var(--color-sold-red);
+        box-shadow: 0 4px 4px 1px rgba(0,0,0,.4);
+
+    }
+}
