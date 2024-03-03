@@ -1,7 +1,7 @@
-import FacebookIcon from '../Icons/FacebookIcon'
-import InstagramIcon from '../Icons/InstagramIcon'
-import LinkedInIcon from '../Icons/LinkedInIcon'
-import TikTokIcon from '../Icons/TikTokIcon'
+import FacebookIcon from '../../Icons/FacebookIcon'
+import InstagramIcon from '../../Icons/InstagramIcon'
+import LinkedInIcon from '../../Icons/LinkedInIcon'
+import TikTokIcon from '../../Icons/TikTokIcon'
 import './Hero.scss'
 
 export default function Hero() {

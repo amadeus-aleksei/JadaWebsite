@@ -14,7 +14,7 @@ import HomePage from "./routes/HomePage"
 import PrivacyPolicyPage from "./routes/PrivacyPolicyPage"
 import SellYourHomePage from "./routes/SellYourHomePage"
 import WorkWithUsPage from "./routes/WorkWithUsPage"
-import HomesForSalePage from "./routes/HomesForSalePage"
+import ForSalePage from "./routes/ForSalePage"
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import "./sass/main.scss"
@@ -48,8 +48,8 @@ const router = createBrowserRouter([
         element: <FAQPage />,
       },
       {
-        path: "/homesforsale",
-        element: <HomesForSalePage />,
+        path: "/forsale",
+        element: <ForSalePage />,
       },
       {
         path: "/privacypolicy",

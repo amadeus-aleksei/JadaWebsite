@@ -1,5 +1,5 @@
-import Hero from "../components/Hero/Hero"
-import HomePageContent from "../components/HomePageContent/HomePageContent"
+import Hero from "../components/HomePage/Hero/Hero"
+import HomePageContent from "../components/HomePage/HomePageContent/HomePageContent"
 
 export default function HomePage() {
     return (
