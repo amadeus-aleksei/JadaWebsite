@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import {
-  createBrowserRouter,
-  RouterProvider,
+  // createBrowserRouter,
+  // RouterProvider,
+  HashRouter,
+  Routes,
   Route,
   Link,
   Outlet,
@@ -19,54 +21,77 @@ import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import "./sass/main.scss"
 
-const AppLayout = () => (
-  <>
-    <Navbar />
-    <Outlet />
-    <Footer />
-  </>
-)
+function AppLayout() {
+  const [isMenuClicked, setIsMenuClicked] = useState(false)
 
-const router = createBrowserRouter([
-  {
-    element: <AppLayout />,
-    children: [
-      {
-        path: "/",
-        element: <HomePage />,
-      },
-      {
-        path: "/about",
-        element: <AboutPage />,
-      },
-      {
-        path: "/contractors",
-        element: <ContractorsPage />,
-      },
-      {
-        path: "/faq",
-        element: <FAQPage />,
-      },
-      {
-        path: "/forsale",
-        element: <ForSalePage />,
-      },
-      {
-        path: "/privacypolicy",
-        element: <PrivacyPolicyPage />,
-      },
-      {
-        path: "/sellyourhome",
-        element: <SellYourHomePage />,
-      },
-      {
-        path: "/workwithus",
-        element: <WorkWithUsPage />,
-      },
-    ]
+  const toggleMenu = () => {
+    setIsMenuClicked(!isMenuClicked)
   }
-])
+
+  return (
+    <>
+      <Navbar isMenuClicked={isMenuClicked} toggleMenu={toggleMenu}/>
+      <div className={`main-content ${isMenuClicked ? 'blur' : ''}`}>
+        <Outlet />
+        <Footer />
+      </div>      
+    </>
+  )
+}
+
+// const router = createBrowserRouter([
+//   {
+//     element: <AppLayout />,
+//     children: [
+//       {
+//         path: "/",
+//         element: <HomePage />,
+//       },
+//       {
+//         path: "/about",
+//         element: <AboutPage />,
+//       },
+//       {
+//         path: "/contractors",
+//         element: <ContractorsPage />,
+//       },
+//       {
+//         path: "/faq",
+//         element: <FAQPage />,
+//       },
+//       {
+//         path: "/forsale",
+//         element: <ForSalePage />,
+//       },
+//       {
+//         path: "/privacypolicy",
+//         element: <PrivacyPolicyPage />,
+//       },
+//       {
+//         path: "/sellyourhome",
+//         element: <SellYourHomePage />,
+//       },
+//       {
+//         path: "/workwithus",
+//         element: <WorkWithUsPage />,
+//       },
+//     ]
+//   }
+// ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
+  <HashRouter>
+    <Routes>
+      <Route path="/" element={<AppLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="contractors" element={<ContractorsPage />} />
+        <Route path="faqs" element={<FAQPage />} />
+        <Route path="forsale" element={<ForSalePage />} />
+        <Route path="privacypolicy" element={<PrivacyPolicyPage />} />
+        <Route path="sellyourhome" element={<SellYourHomePage />} />
+        <Route path="workwithus" element={<WorkWithUsPage />} />
+      </Route>
+    </Routes>
+  </HashRouter>
 )

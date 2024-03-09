@@ -5,6 +5,7 @@
     height: 95px;
     background-color: var(--opaque-white-85);
     box-shadow: 0 4px 15px 6px rgba(0,0,0,.8);
+    
         
     &__logo-container {
         display: flex;
@@ -35,4 +36,67 @@
         background-color: var(--color-foam-green);
         border-left: 1px solid rgba(0,0,0,.35);
     }
+
+    &__hamburger {
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.menu {
+    // width and right must be the same
+    width: 50%;
+    right: 50%;
+    top: 0;
+    position: fixed;
+    background-color: var(--color-dark-cyan);        
+    height: 100%;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transform: translateX(100%);
+    z-index: 1;
+
+    &__close {
+        color: var(--color-light-cream-white);
+        font-size: 1.4rem;
+        padding: 2rem 1rem 0 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        color: var(--color-light-cream-white);
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding: 2rem 1rem;
+
+        li {
+            font-size: 1.5rem;
+            text-decoration: none;
+            padding: 0 0 2.4rem 0;
+            color: var(--color-light-cream-white);
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inherit;
+    backdrop-filter: blur(100px);
+}
+
+.blur {
+    filter: blur(5px);
+    pointer-events: none; // Optional: prevent clicking on elements when blurred.
 }
