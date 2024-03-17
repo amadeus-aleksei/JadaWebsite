@@ -1,8 +1,12 @@
-.for-sale-page-content {
+.about-page-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--color-light-cream-white);
     padding: 1.6rem;
     padding-bottom: 0;
+}
+
+.bold {
+    font-weight: bold;
 }

@@ -1,6 +1,7 @@
 import PropertyCard from "../PropertyCard/PropertyCard"
 import InfoCard from "../InfoCard/InfoCard"
 import "./ForSalePageContent.scss"
+import FormCard from "../FormCard/FormCard"
 
 export default function ForSalePageContent() {
     return (
@@ -14,6 +15,10 @@ export default function ForSalePageContent() {
             <PropertyCard />
             <PropertyCard />
             <PropertyCard />
+            <FormCard 
+                title='FIND ME A HOME AND GET ME PRE-QUALIFIED!'
+                buttonText='Contact Me'
+            />
         </div>
     )
 }

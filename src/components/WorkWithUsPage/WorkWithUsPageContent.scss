@@ -1,0 +1,129 @@
+.work-with-us-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-light-cream-white);
+    padding: 1.6rem;
+    padding-bottom: 0;
+}
+
+.realtors-card-content {
+    text-align: left;
+
+    h2 {
+        margin: 1.4em 0 .8em 0;
+        text-align: center;
+        color: var(--color-sea-green);
+    }
+
+    ul {
+        font-size: 1.3em;
+        margin: 0 0 1.4em 1.2em;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            margin: 0 0 .2em 0;
+        }
+    }
+
+    &__btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.4em;
+        width: 100%;
+        
+        p {
+            color: var(--color-sea-green);
+            font-size: 1.2em;
+            margin-bottom: .4em;
+        }
+    
+        &__btns {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1em;
+            width: 100%;
+        }
+    
+        .phone-icon img,
+        .email-icon img {
+            width: 2.4em;
+            height: auto;
+        }
+    }
+}
+
+.contractors-card-content {
+    text-align: left;
+    margin-bottom: 1em;
+
+    h2 {
+        margin: 1.4em 0 .8em 0;
+        text-align: center;
+        color: var(--color-sea-green);
+    }
+
+    ul {
+        font-size: 1.3em;
+        margin: 0 0 1.4em 1.2em;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            margin: 0 0 .2em 0;
+        }
+    }
+}
+
+.private-investors-card-content {
+    text-align: left;
+
+    h2 {
+        margin: 1.4em 0 .8em 0;
+        text-align: center;
+        color: var(--color-sea-green);
+    }
+
+    ul {
+        font-size: 1.3em;
+        margin: 0 0 1.4em 1.2em;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            margin: 0 0 .2em 0;
+        }
+    }
+
+    &__btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.4em;
+        width: 100%;
+        
+        p {
+            color: var(--color-sea-green);
+            font-size: 1.2em;
+            margin-bottom: .4em;
+        }
+    
+        &__btns {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1em;
+            width: 100%;
+        }
+    
+        .phone-icon img,
+        .email-icon img {
+            width: 2.4em;
+            height: auto;
+        }
+    }
+}
+

@@ -1,7 +1,9 @@
+import FAQPageContent from "../components/FAQPage/FAQPageContent";
+
 export default function FAQPage() {
     return (
         <div className="faq-page">
-            <h1>FAQPage</h1>
+            <FAQPageContent />
         </div>
     )
 }

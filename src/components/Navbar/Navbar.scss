@@ -71,18 +71,33 @@
     }
 
     &__list {
+        width: 100%;
         list-style: none;
-        color: var(--color-light-cream-white);
         display: flex;
         flex-direction: column;
-        text-align: right;
-        padding: 2rem 1rem;
+        padding: 2rem 0 0 0;
 
         li {
+            width: 100%;
             font-size: 1.5rem;
             text-decoration: none;
-            padding: 0 0 2.4rem 0;
+            padding: 0rem 0 0.6rem 0;
             color: var(--color-light-cream-white);
+            background-color: transparent;
+            border: none;
+        }
+    }
+
+    &__link {
+        display: block;
+        width: 100%;
+        color: var(--color-light-cream-white);
+        text-align: right;
+        padding: .4rem 1rem .4rem 0;
+        box-sizing: border-box;
+
+        &:active {
+            background-color: var(--color-sea-green);
         }
     }
 }
@@ -96,7 +111,11 @@
     backdrop-filter: blur(100px);
 }
 
+// Applied to the Outlet and Footer of page
 .blur {
     filter: blur(5px);
-    pointer-events: none; // Optional: prevent clicking on elements when blurred.
+    pointer-events: none;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
 }

@@ -1,7 +1,9 @@
+import AboutPageContent from "../components/AboutPage/AboutPageContent"
+
 export default function AboutPage() {
     return (
         <div className="about-page">
-            <h1>AboutPage</h1>
+            <AboutPageContent />
         </div>
     )
 }

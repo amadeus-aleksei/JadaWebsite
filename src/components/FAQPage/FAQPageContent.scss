@@ -1,0 +1,22 @@
+.faq-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-light-cream-white);
+    padding: 1.6rem;
+    padding-bottom: 0;
+}
+
+.faq-card-content {
+    text-align: left;
+    font-size: 1.2em;
+
+    h2 {
+        margin: .4em 0 .8em 0;
+        color: var(--color-sea-green);
+    }
+
+    p {
+        margin: 0 0 .6em 0;
+    }
+}

@@ -1,7 +1,9 @@
+import WorkWithUsPageContent from "../components/WorkWithUsPage/WorkWithUsPageContent";
+
 export default function WorkWithUsPage() {
     return (
         <div className="work-with-us-page">
-            <h1>WorkWithUsPage</h1>
+            <WorkWithUsPageContent />
         </div>
     )
 }

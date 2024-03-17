@@ -5,9 +5,20 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { AiOutlineClose } from "react-icons/ai"
 import "./Navbar.scss"
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function Navbar({isMenuClicked, toggleMenu}) {
+
+    // Locks scrolling when isMenuClicked
+    useEffect(() => {
+        if (isMenuClicked) {
+            document.body.style.overflow = 'hidden'
+        }
+        else {
+            document.body.style.overflow = ''
+        }
+
+    }, [isMenuClicked])
 
     return (
         <div className='navbar'>
@@ -30,24 +41,24 @@ export default function Navbar({isMenuClicked, toggleMenu}) {
             <div className={isMenuClicked ? 'menu visible' : 'menu hidden'}>
                 <AiOutlineClose className='menu__close' onClick={toggleMenu} />
                 <ul className='menu__list'>
-                    <Link to="/">
-                        <li>Homepage</li>
-                    </Link>
-                    <Link to="/about">
-                        <li>About</li>
-                    </Link>
-                    <Link to="/sellyourhome">
-                        <li>Sell Your Home</li>
-                    </Link>
-                    <Link to="/forsale">
-                        <li>Homes for Sale</li>
-                    </Link>
-                    <Link to="/workwithus">
-                        <li>Work With Us</li>
-                    </Link>
-                    <Link to="/faqs">
-                        <li>FAQs</li>
-                    </Link>
+                    <li onClick={toggleMenu}>
+                        <Link to='/' className='menu__link'>Homepage</Link>
+                    </li>
+                    <li onClick={toggleMenu}>
+                        <Link to='/about' className='menu__link'>About</Link>
+                    </li>
+                    <li onClick={toggleMenu}>
+                        <Link to='/sellyourhome' className='menu__link'>Sell Your Home</Link>
+                    </li>
+                    <li onClick={toggleMenu}>
+                        <Link to='/forsale' className='menu__link'>Homes for Sale</Link>
+                    </li>
+                    <li onClick={toggleMenu}>
+                        <Link to='/workwithus' className='menu__link'>Work With Us</Link>
+                    </li>
+                    <li onClick={toggleMenu}>
+                        <Link to='/faqs' className='menu__link'>FAQs</Link>
+                    </li>
                 </ul>
             </div>
         </div>        
