@@ -3,16 +3,17 @@
     background-image: url('../../../assets/chicago-background.png');
     background-size: cover;
     background-position: center;
-    height: 75vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #E7F0F2;
-    z-index: -1;
+    z-index: 0;
 
     &__socials-icons-container {
+        z-index: 20;
         position: absolute;
         top: 3.5em;
         left: .6em;

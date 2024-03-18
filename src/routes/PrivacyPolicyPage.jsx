@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import PrivacyPolicyPageContent from "../components/PrivacyPolicyPage/PrivacyPolicyPageContent";
 
 export default function PrivacyPolicyPage() {
     //Goes to top of page on redirect
@@ -8,7 +9,7 @@ export default function PrivacyPolicyPage() {
 
     return (
         <div className="privacy-policy-page">
-            <h1>PrivacyPolicyPage</h1>
+            <PrivacyPolicyPageContent />
         </div>
     )
 }

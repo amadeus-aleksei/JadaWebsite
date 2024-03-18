@@ -1,0 +1,17 @@
+.privacy-policy-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-light-cream-white);
+    padding: 1.6rem;
+    padding-bottom: 0;
+
+    p {
+        text-align: left;
+
+        ul {
+            margin-left: 1em;
+            font-size: 1.4em;
+        }
+    }
+}
