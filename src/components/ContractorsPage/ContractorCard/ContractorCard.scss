@@ -42,7 +42,6 @@
             border: 0;
             padding: .2rem 0 .2rem .4rem;
             min-width: 10rem;
-            min-height: 4rem;
             width: 100%;
             font-size: 1.1rem;
             
@@ -114,6 +113,10 @@
     &__group {
         margin: 0 0 2rem 0;
     }
+}
+
+.text-area-big {
+    min-height: 6rem;
 }
 
 

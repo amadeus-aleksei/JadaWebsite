@@ -57,6 +57,9 @@ export default function Navbar({isMenuClicked, toggleMenu}) {
                         <Link to='/workwithus' className='menu__link'>Work With Us</Link>
                     </li>
                     <li onClick={toggleMenu}>
+                        <Link to='/contractors' className='menu__link'>Contractors</Link>
+                    </li>
+                    <li onClick={toggleMenu}>
                         <Link to='/faqs' className='menu__link'>FAQs</Link>
                     </li>
                 </ul>

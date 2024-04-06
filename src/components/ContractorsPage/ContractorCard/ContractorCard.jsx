@@ -15,7 +15,7 @@ export default function ContractorCard({title, buttonText}) {
                     <textarea type="text" name="work-phone" placeholder="Work Phone" />
                     <textarea type="text" name="company-name" placeholder="Company Name" />
                     <textarea type="text" name="email" placeholder="Email" />
-                    <textarea className="specialized_field" type="text" name="specialized_field" placeholder="Specialized Field (GC, Plumber, Electric, Roofer, etc.)" />
+                    <textarea className="text-area-big" type="text" name="specialized_field" placeholder="Specialized Field (GC, Plumber, Electric, Roofer, etc.)" />
                 </div>
 
                 <h2 className="contractor-card__title">Insurance and Experience</h2>
@@ -35,7 +35,7 @@ export default function ContractorCard({title, buttonText}) {
                     <textarea type="text" name="type-insurance" placeholder="Type of insurance?" />
                     <textarea type="text" name="coverage-amt" placeholder="How much coverage?" />
                     <textarea type="text" name="license-updated" placeholder="License updated?" />
-                    <textarea type="text" name="time-in-area" placeholder="How long have you been doing business in the area?" />
+                    <textarea className="text-area-big" type="text" name="time-in-area" placeholder="How long have you been doing business in the area?" />
                     <textarea type="text" name="time-with-crew" placeholder="How long running own crew?" />
                     <textarea type="text" name="people-in-crew" placeholder="How many people on crew full time?" />
                 </div>
@@ -43,9 +43,9 @@ export default function ContractorCard({title, buttonText}) {
 
                 <h2 className="contractor-card__title">Current Projects and Bidding</h2>
                 <div className="contractor-card__input-group">
-                    <textarea type="text" name="number-projects" placeholder="How many projects do you have going on right now?" />
+                    <textarea className="text-area-big" type="text" name="number-projects" placeholder="How many projects do you have going on right now?" />
                     <textarea type="text" name="past-year" placeholder="In the past year?" />
-                    <textarea type="text" name="jobs-amount" placeholder="How many jobs do you typically handle at once?" />
+                    <textarea className="text-area-big" type="text" name="jobs-amount" placeholder="How many jobs do you typically handle at once?" />
                     <textarea type="text" name="scopes-of-work" placeholder="What were the scopes of work?" />
                     <textarea type="text" name="work-addresses" placeholder="What are the addresses?" />
                 </div>
@@ -98,7 +98,7 @@ export default function ContractorCard({title, buttonText}) {
 
                 <h2 className="contractor-card__title">More Pre-screening</h2>
                 <div className="contractor-card__input-group">
-                    <textarea type="text" name="communication-freq" placeholder="How often do you comminucate with your clients during a job?" />
+                    <textarea className="text-area-big" type="text" name="communication-freq" placeholder="How often do you comminucate with your clients during a job?" />
                 </div>
                 <p>Do you clean the jobsite daily?</p>
                 <div className="contractor-card__button-group">
@@ -126,9 +126,9 @@ export default function ContractorCard({title, buttonText}) {
                 <h2 className="contractor-card__title">References</h2>
                 <p>Can you provide a list of references with the names and numbers you have done work for in the past?</p>
                 <div className="contractor-card__input-group">
-                    <textarea type="text" name="reference1" placeholder="Reference 1" />
-                    <textarea type="text" name="reference2" placeholder="Reference 2" />
-                    <textarea type="text" name="reference3" placeholder="Reference 3" />
+                    <textarea className="text-area-big" type="text" name="reference1" placeholder="Reference 1" />
+                    <textarea className="text-area-big" type="text" name="reference2" placeholder="Reference 2" />
+                    <textarea className="text-area-big" type="text" name="reference3" placeholder="Reference 3" />
                 </div>
                 <button className="contractor-card__submit-btn" type="submit" value="Submit">Apply Now</button>
             </form>
